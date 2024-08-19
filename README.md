@@ -1,25 +1,21 @@
 # HTML Resume
 My resume written in HTML.
 
-## Getting Setup
+## Setup / Font
 
-Setting up NPM:
+Setting up NPM: `npm install puppeteer`
 
-`npm install puppeteer`
+this font I used: https://fonts.google.com/specimen/Tinos
 
-this font I used:
+## Converting pics with ffmpeg
 
-https://fonts.google.com/specimen/Tinos
-
-converting pics
-
-from big pics to pics
+#### From big pics to pics
 
 `cd big-pics/`
 
 `for i in *; do ffmpeg -i "$i" -qmin 1 -qscale:v 1 "../pics/$(basename "$i" .${i##*.}).jpeg"; done`
 
-from pics to small pics
+#### From pics to small pics
 
 `cd pics/`
 
